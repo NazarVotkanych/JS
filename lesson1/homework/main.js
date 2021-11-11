@@ -216,31 +216,57 @@
 
 // - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
 //     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
-let name = prompt('What is your name?');
-let surname = prompt('what is your surname?');
-let age = prompt('What is your age?');
-console.log(`Вітаю ${name} ${surname}. Тобі ${age} років.`);
+// let name = prompt('What is your name?');
+// let surname = prompt('what is your surname?');
+// let age = prompt('What is your age?');
+// console.log(`Вітаю ${name} ${surname}. Тобі ${age} років.`);
 
+// let person = [
+//     {
+//         name : prompt('What is your name?'),
+//         surname : prompt('what is your surname?'),
+//         age : prompt('What is your age?'),
+//     }
+// ]
+// console.log(`Вітаю ${person.name} ${person.surname}. Тобі ${person.age} років.`);
 // - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
 //     let a = 100; let b = '100'; let c = true;
+// console.log(typeof a);
+// console.log(typeof b);
+// console.log(typeof c);
 // - Визначити відповідний оператор в виразах що б вийшов відповідний результат.
 //     В однакових виразах не використовувати однакові оператори!!!
 //     5 ? 6 -> true
 // 5 ? 6 -> false
-// 5 ? 6 -> false
-// 5 ? 6 -> false
-// 10 ? 10 -> true
-// 10 ? 10 -> true
-// 10 ? 10 -> false
-// 10 ? 10 -> false
-// 10 ? 10 -> false
-// 123 ? '123' -> false
-// 123 ? '123' -> true
+// console.log(5 == 6);
+// // 5 ? 6 -> false
+// console.log(5>6);
+// // 5 ? 6 -> false
+// console.log(5>=6);
+// // 10 ? 10 -> true
+// console.log(10===10);
+// // 10 ? 10 -> true
+// console.log(10==10);
+//
+// // 10 ? 10 -> false
+// console.log(10!==10);
+// // 10 ? 10 -> false
+// console.log(10!=10);
+// // 10 ? 10 -> false
+// console.log(10<10);
+// // 123 ? '123' -> false
+// console.log(123==='123');
+// // 123 ? '123' -> true
+// console.log(123=='123');
 //
 // - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
 //     let str = "20";
 // let a = 5;
 // document.write(str + a + "<br/>");
-// document.write(str - a + "<br/>");
-// document.write(str * "2" + "<br/>");
-// document.write(str / 2 + "<br/>");
+// 205<br/>
+// // document.write(str - a + "<br/>");
+// 15<br/> ("20" привидеться до числа)
+// // document.write(str * "2" + "<br/>");
+// 40<br/>
+// // document.write(str / 2 + "<br/>");
+// 10<br/>
