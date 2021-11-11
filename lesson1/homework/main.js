@@ -219,16 +219,15 @@
 // let name = prompt('What is your name?');
 // let surname = prompt('what is your surname?');
 // let age = prompt('What is your age?');
-// console.log(`Вітаю ${name} ${surname}. Тобі ${age} років.`);
-
-// let person = [
-//     {
-//         name : prompt('What is your name?'),
-//         surname : prompt('what is your surname?'),
-//         age : prompt('What is your age?'),
-//     }
-// ]
-// console.log(`Вітаю ${person.name} ${person.surname}. Тобі ${person.age} років.`);
+// // console.log(`Вітаю ${name} ${surname}. Тобі ${age} років.`);
+//
+// let person = {
+//     name,
+//     surname,
+//     age
+// }
+//
+// console.log(`Вітаю ())${person.name} ${person.surname}. Тобі ${person.age} років.`);
 // - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
 //     let a = 100; let b = '100'; let c = true;
 // console.log(typeof a);
