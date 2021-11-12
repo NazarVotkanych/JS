@@ -107,4 +107,23 @@
 // let result = Math.sqrt(four);
 // console.log(result);
 
+// Середня лінія трапенії
+// // let sum = {
+// //     a:prompt('What is top base'),
+// //     b:prompt('What is bottom base')
+// // }
+// // let result = (sum.a+sum.b)/2;
+// // console.log(result);
+
+// Периметр
+// let sum = {
+//     a:Number.parseInt(prompt('What is a side')),
+//     b:Number.parseInt(prompt('What is b side')),
+//     c:Number.parseInt(prompt('What is c side')),
+//     d:Number.parseInt(prompt('What is d side')),
+// }
+// let result = (sum.a+sum.b+sum.c+sum.d);
+// console.log(result);
+
+
 
