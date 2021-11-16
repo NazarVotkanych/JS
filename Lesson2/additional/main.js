@@ -44,3 +44,23 @@
 // } if (num >= 1 && num <= 100) {
 //     console.log('Позитивне число')
 // }
+
+
+//
+// let first = 10;
+// let second = 20;
+// let third = 30;
+// if (first < second && third > second) {
+//     console.log(second);
+// } else {
+//     console.log(first);
+// }
+
+let num = [1000, 150,50,100, 500];
+num.sort (function (a, b) {
+   return a - b;
+});
+let result = num[Math.floor(num.length/2)];
+console.log(result)
+// console.log(num);
+// console.log(num[2]);
