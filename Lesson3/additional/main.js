@@ -253,9 +253,9 @@
 // }
 // console.log(ar);
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
-let products = [ 'a', 'b', 'c'];
-let ar = "";
-for (const product of products){
-        ar = ar + products[product];
-}
-console.log(ar);
+// let products = [ 'a', 'b', 'c'];
+// let ar = "";
+// for (const product of products){
+//         ar = ar + product;
+// }
+// console.log(ar);
