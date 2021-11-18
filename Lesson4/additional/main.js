@@ -43,7 +43,7 @@
 //     let array1 = [];
 //     for (const arra of item) {
 //         for (const key in arra){
-//             array1.push(arra[key]);
+//             array1.push(key);
 //
 //         }
 //     }
@@ -66,3 +66,16 @@
 //     - Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
 // EXAMPLE:
 //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
+
+// function gather(item) {
+//     let array1 = [];
+//     for (const arra of item) {
+//         for (const key in arra){
+//             array1.push(arra[key]);
+//
+//         }
+//     }
+//     return array1
+// }
+// let sumArr =gather(array);
+// console.log(sumArr);
