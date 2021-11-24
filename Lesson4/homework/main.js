@@ -23,7 +23,6 @@
 // console.log(result);
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
-//  let array1 = [10,20,30,40];
 //
 // function array(limit) {
 //     for (let i = 0; i < limit.length; i++) {
@@ -49,6 +48,7 @@
 // text('Product');
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+
 // function text(liText, count) {
 //     document.write(`<ul>`)
 //     for (let i = 0; i < (count || 3); i++){
@@ -57,10 +57,9 @@
 //     }
 //     document.write(`</ul>`)
 // }
-// text('Hello');
+// text('Hello', 5);
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
-// let array = [10,true,'Hello',55,false,'World'];
 // function list(count) {
 //     document.write(`<ul>`)
 //     for (let i = 0;i < count.length; i++) {
@@ -75,7 +74,7 @@
 //     {id: 10, name: "Nazar", age: 10, surname: "Votkanych"},
 //     {id: 10, name: "Nazar", age: 10, surname: "Votkanych"},
 // ];
-
+//
 // function obj(limit) {
 //     document.write(`<div>`)
 //     for (let i = 0; i < limit.length; i++) {
