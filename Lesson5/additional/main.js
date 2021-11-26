@@ -1,27 +1,27 @@
 // - Дано натуральное число n. Выведите все числа от 1 до n.
-// let n = 15;
-// let num = (limit) => {
-//     for (let i = 1; i <= limit ; i++) {
-//         console.log(i);
+
+// let n = 15
+// let array = (limit) => {
+//     for (let i = 1; i <= limit; i++){
+//         console.log(i)
 //     }
 // }
-// num(n)
+// array(n)
 
 // - Даны два целых числа A и В . Выведите все числа от A до B включительно, в порядке возрастания, если A < B, или в порядке убывания в противном случае.
 
-// const compareValues = (a ,b) => {
+// const array = (a, b) => {
 //     if (b < a) {
 //         for (let i = b; i <= a; i++) {
-//             console.log(i);
+//             console.log(i)
 //         }
 //     } else if (b > a) {
-//         for (let i = a; i <= b; i++ ) {
+//         for (let i = a; i <= b; i++) {
 //             console.log(i)
 //         }
 //     }
 // }
-// compareValues(19,15)
-
+// array(55,10)
 //
 //
 // -   функція Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
@@ -30,7 +30,14 @@
 //   foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
 //   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
 //
-// let foo = [9,8,0,4]
+let foo = [9,8,0,4]
+const sortArr = (array, iterator) => {
+  let num1 = array[iterator]
+    array[iterator] = array[iterator + 1]
+    array[iterator + 1] = num1
+    console.log(array);
+}
+sortArr(foo, 1)
 // const sortArr = (array, iterator) => {
 //     let num1 = array[iterator]
 //     array[iterator] = array[iterator + 1]
@@ -62,7 +69,19 @@
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
 
-// let foo = [1,0,6,0,3]
+
+// let foo = [0,1,2,3,4]
+// const sortArr = (arrays) => {
+//   let zeroArr = []
+//     let rando = []
+//     for (let i = 0; i < arrays.length; i++){
+//         if (arrays[i] === 0){
+//             zeroArr.push(arrays[i])
+//         } else rando.push(arrays[i])
+//     }
+//     return rando.concat(zeroArr)
+// }
+// console.log(sortArr(foo));
 // const sortArr = (arrays) => {
 //     let zeroArr = []
 //     let numArr = []
@@ -77,3 +96,24 @@
 
 
 // через цикл
+// let n = 15;
+// let num = (limit) => {
+//     for (let i = 1; i <= limit ; i++) {
+//         console.log(i);
+//     }
+// }
+// num(n)
+
+
+// const compareValues = (a ,b) => {
+//     if (b < a) {
+//         for (let i = b; i <= a; i++) {
+//             console.log(i);
+//         }
+//     } else if (b > a) {
+//         for (let i = a; i <= b; i++ ) {
+//             console.log(i)
+//         }
+//     }
+// }
+// compareValues(19,15)

@@ -64,10 +64,61 @@
 //     let sumArray = limit.reduce((acc, num) => acc + num, 0)
 //     return sumArray/limit.length
 // }
-// sum(array)
-// console.log(sum(array));
+// let num = sum(array)
+// console.log(num);
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+
+// let array = [10,20,30,60,4,80,20,30,46,50];
+// let num = (limit) => {
+//     let min = limit[0]
+//     let max = limit[0]
+//     for (let i = 0; i < limit.length; i++) {
+//         if (limit[i] > max) {
+//             max = limit[i]
+//         } else if (limit[i] < min) {
+//             min = limit[i]
+//         }
+//     }
+//     return {min, max}
+// }
+// let arro = num(array)
+// console.log(arro);
+// - створити функцію яка заповнює масив рандомними числами
+// let array = () => {
+//     let zeroArr = []
+//     for (let i = 1; i <= 10; i++) {
+//         let randoArr = Math.round(Math.random())
+//         zeroArr.push(randoArr)
+//     }
+//     return zeroArr
+// }
+// let num = array(20);
+// console.log(num);
+
+// (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
+// - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+// let num = (limit, diapazon) => {
+//     let randoArr = []
+//     for (let i = 0; i < limit; i++){
+//         let zeroArr = Math.round(Math.random()*diapazon)
+//         randoArr.push(zeroArr)
+//     }
+//     return randoArr
+// }
+// console.log(num(10,20));
+
+// // // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+// let array1 = [1,2,3]
+// let array = (array) => {
+//     let reverseArr = []
+//     for (let i = array.length - 1; i >= 0; i--) {
+//         reverseArr.push(array[i])
+//     }
+//     return reverseArr
+// }
+// let num = array(array1)
+// console.log(num);
 
 // let array = [10,20,30,60,4,80,20,30,46,50];
 // let num = (limit) => {
@@ -87,7 +138,7 @@
 // }
 // console.log(num(array))
 
-// - створити функцію яка заповнює масив рандомними числами
+
 // let array = () => {
 //     let random = []
 //     for (let i = 0; i < 10; i++ ) {
@@ -99,8 +150,6 @@
 // let num = array(20)
 // console.log(num);
 
-// (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
-// - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
 // let array = (limit, diapazon) => {
 //     let random = []
 //     for (let i = 0; i < limit; i++ ) {
@@ -112,8 +161,6 @@
 // let num = array(20,100)
 // console.log(num);
 
-// // // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
-// let array1 = [1,2,3]
 // let array = (array) => {
 //     let newArr = []
 //     for (let i = array.length - 1; i >= 0; i--) {
@@ -122,4 +169,3 @@
 //     return newArr
 // }
 // console.log(array(array1));
-

@@ -43,15 +43,15 @@
 // console.log(numbers)
 // - створити функцію яка повертає найменьше число з масиву
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
-// let array = [10,20,30,60,4,80,20,30,46,50];
-// function sum (limit) {
-//     let sumArray = limit.reduce((acc, num) => acc + num, 0)
-//
-//     return sumArray
-// }
-//
-// sum(array)
-// console.log(sum(array));
+let array = [10,20,30,60,4,80,20,30,46,50];
+function sum (limit) {
+    let sumArray = limit.reduce((acc, num) => acc + num, 0)
+
+    return sumArray
+}
+
+sum(array)
+console.log(sum(array));
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
 // let array = [10,20,30,60,4,80,20,30,46,50];
 // function sum (limit) {
