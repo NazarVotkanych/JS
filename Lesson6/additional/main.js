@@ -107,13 +107,19 @@ coursesArray = [
 //     let symb = "о", str = "Астрономия это наука о небесных объектах";
 // document.writeln(count(str, symb)) // 5
 
-// let str = "Астрономия это наука о небесных объектах";
-// // let re = /[A-Z]/;
-// let InDex = str(stri, stringsearch) => {
-//     str.split('')
+// let count = (str, stringsearch) => {
+//     let empty =[]
+//     let newStr = str.toLowerCase().split('')
+//     for (let i = 0; i < newStr.length; i++){
+//         if (newStr[i] === stringsearch) {
+//             empty.push(newStr[i])
+//         }
+//     }
+//     return empty.length
 // }
+// let newCount = count("Астрономия это наука о небесных объектах", 'а')
+// console.log(newCount);
 
-//
 // - Напишіть функцію cutString(str, n), яка видаляє зайві слова з рядка str, залишивши у ній n слів.
 
 //     let str = "Сила тяжести приложена к центру масс тела";

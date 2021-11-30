@@ -99,31 +99,128 @@
 // Приклад результуючого об'єкту
 // {
 //     titleOfTag: 'area',
-//         action: `Каждый элемент <area> определяет активные области изображения, которые являются ссылками...`,
+//     action: `Каждый элемент <area> определяет активные области изображения, которые являются ссылками...`,
 //     attrs: [
-//     {titleOfAttr: 'accesskey', actionOfAttr: 'Переход к области с помощью комбинации клавиш'},
+//     {
+//     titleOfAttr: 'accesskey',
+//     actionOfAttr: 'Переход к области с помощью комбинации клавиш'},
 //     {/*some props and values*/},
-//     {/*...*/},
+// //  {/*...*/},
 //     {/*...*/},
 // ]
 //
 // }
+
 class Description {
 
-    constructor(name,desc,array) {
+    constructor(name,desc, attrs) {
         this.name = name;
-        this.desc = desc;
-        this.array = array;
+        this.desc = desc
+        this.attrs = attrs
     }
 }
-class Attribute extends Description{
 
-    constructor(name, desc) {
-        super();
-        this.name = name;
-        this.desc = desc;
-    }
-}
-let description = new Description(' <a>','Тег <a> является одним из важных элементов HTML и предназначен для создания ссылок.','[accesskey,coords]');
-let attribute = new Attribute('coords','Активация ссылки с помощью комбинации клавиш.');
-console.log(description);
+let attribute = new Description(
+    '<a>',
+    'Тег <a> является одним из важных элементов HTML и предназначен для создания ссылок.',
+    [
+        {
+        titleOfElement: 'area',
+        actionOfAttr: 'fewcewcewc'
+        },
+        {
+            titleOfElement: 'aadda',
+            actionOfAttr: 'efwecewc'
+        }
+    ],
+    'area',
+    'Активация ссылки с помощью комбинации клавиш.');
+console.log(attribute);
+
+let diV = new Description(
+    '<div>',
+    'Элемент <div> является блочным элементом и предназначен для выделения фрагмента документа с целью изменения вида содержимого.',
+    [
+        {
+            titleOfElement: 'align',
+            actionOfAttr: 'Задает выравнивание содержимого тега <div>.'
+        },
+        {
+            titleOfElement: 'title',
+            actionOfAttr: 'Добавляет всплывающую подсказку к содержимому.'
+        }
+    ],
+    'area',
+    'Активация ссылки с помощью комбинации клавиш.');
+console.log(diV);
+
+let h1 = new Description(
+    ' <h1>',
+    'HTML предлагает шесть заголовков разного уровня, которые показывают относительную важность секции,',
+    [
+        {
+            titleOfElement: 'align',
+            actionOfAttr: 'Определяет выравнивание заголовка.'
+        },
+    ],
+    'area',
+    'Активация ссылки с помощью комбинации клавиш.');
+console.log(h1);
+
+let input = new Description(
+    '<span>',
+    'Тег <span> предназначен для определения строчных элементов документа.',
+    [
+        {
+            titleOfElement: 'class',
+            actionOfAttr: 'Определяет имя класса, которое позволяет связать тег со стилевым оформлением.'
+        },
+        {
+            titleOfElement: 'contenteditable',
+            actionOfAttr: 'Сообщает, что элемент доступен для редактирования пользователем.'
+        }
+    ],
+    );
+console.log(diV);
+let form = new Description(
+    '<form>',
+    'Тег <form> устанавливает форму на веб-странице. Форма предназначена для обмена данными между пользователем и сервером.',
+    [
+        {
+            titleOfElement: 'accept-charset',
+            actionOfAttr: 'Устанавливает кодировку, в которой сервер может принимать и обрабатывать данные.'
+        },
+        {
+            titleOfElement: 'action',
+            actionOfAttr: 'Адрес программы или документа, который обрабатывает данные формы'
+        }
+    ],
+);
+console.log(form);
+
+let option = new Description(
+    ' <option> ',
+    'Тег <option> определяет отдельные пункты списка, создаваемого с помощью контейнера <select>.',
+    [{
+            titleOfElement: 'disabled',
+            actionOfAttr: 'Заблокировать для доступа элемент списка.'
+        },{
+            titleOfElement: 'label',
+            actionOfAttr: 'Указание метки пункта списка.'
+        }],);
+console.log(option);
+
+let select = new Description(
+    ' <select> ',
+    'Тег <select> позволяет создать элемент интерфейса в виде раскрывающегося списка<select>.',
+    [{
+        titleOfElement: 'accesskey',
+        actionOfAttr: 'Позволяет перейти к списку с помощью некоторого сочетания клавиш..'
+    },{
+        titleOfElement: 'autofocus',
+        actionOfAttr: 'Устанавливает, что список получает фокус после загрузки страницы.'
+    }],);
+console.log(select);
+
+
+
