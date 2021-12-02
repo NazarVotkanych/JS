@@ -10,9 +10,9 @@
 //     this.drive = function (){
 //         console.log(`їдемо зі швидкістю ${this.Max_speed} на годину`)
 //     }
-//     this.info = function (){
-//     for (const property in this){
-//         console.log(`${property}:${this[property]}`);
+//     this.info = function () {
+//         console.log(`model - ${this.model}, producer - ${this.producer}`)
+//
 //     }
 //     }
 //     this.changeYear = function (newValue){
