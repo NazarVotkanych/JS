@@ -46,48 +46,48 @@
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
 
-let labelOne = document.createElement('label');
-let labelTwo = document.createElement('label');
-let labelThree = document.createElement('label');
-
-labelOne.innerText = "кількість рядків"
-labelTwo.innerText = "кількість ячеєк"
-labelThree.innerText = "вміст ячеєк"
-
-
-let inputOne = document.createElement('input')
-
-let inputTwo = document.createElement('input')
-let inputThree = document.createElement('input')
-let button2 = document.createElement('button')
-
-button2.innerText = 'btn2'
-
-labelOne.append(inputOne);
-labelTwo.append(inputTwo);
-labelThree.append(inputThree);
-
-document.body.append(labelOne, labelTwo, labelThree, button2);
-
-
-button2.addEventListener('click', () => {
-    generate_table(inputOne.value, inputTwo.value, inputThree.value);
-})
-
-function generate_table(tr, td, textEnter) {
-    let table = document.createElement('table')
-    document.body.appendChild(table)
-
-    for (let i = 0; i < tr; i++) {
-        let tr = document.createElement("tr");
-        for (let j = 0; j < td; j++) {
-            let td = document.createElement("td");
-            td.innerText = textEnter
-            tr.appendChild(td)
-        }
-        table.appendChild(tr)
-    }
-}
+// let labelOne = document.createElement('label');
+// let labelTwo = document.createElement('label');
+// let labelThree = document.createElement('label');
+//
+// labelOne.innerText = "кількість рядків"
+// labelTwo.innerText = "кількість ячеєк"
+// labelThree.innerText = "вміст ячеєк"
+//
+//
+// let inputOne = document.createElement('input')
+//
+// let inputTwo = document.createElement('input')
+// let inputThree = document.createElement('input')
+// let button2 = document.createElement('button')
+//
+// button2.innerText = 'btn2'
+//
+// labelOne.append(inputOne);
+// labelTwo.append(inputTwo);
+// labelThree.append(inputThree);
+//
+// document.body.append(labelOne, labelTwo, labelThree, button2);
+//
+//
+// button2.addEventListener('click', () => {
+//     generate_table(inputOne.value, inputTwo.value, inputThree.value);
+// })
+//
+// function generate_table(tr, td, textEnter) {
+//     let table = document.createElement('table')
+//     document.body.appendChild(table)
+//
+//     for (let i = 0; i < tr; i++) {
+//         let tr = document.createElement("tr");
+//         for (let j = 0; j < td; j++) {
+//             let td = document.createElement("td");
+//             td.innerText = textEnter
+//             tr.appendChild(td)
+//         }
+//         table.appendChild(tr)
+//     }
+// }
 
 
 //
@@ -99,6 +99,29 @@ function generate_table(tr, td, textEnter) {
 //     Перевірку робити при натисканні на кнопку
 //
 //
+
+let mates = ['Fword', 'Bword', 'Nword'];
+let input = document.createElement('input');
+let button = document.createElement('button');
+button.innerText = 'Check';
+document.body.append(input, button);
+
+button.addEventListener('click', function () {
+    let valueInput = input.value;
+
+    for (let mate of mates) {
+        if (mate === valueInput) {
+            alert('It is you. LOL');
+            input.value = '';
+            return;
+        }
+    }
+
+    if (valueInput) {
+        alert('Good Job');
+        input.value = '';
+    }
+})
 // - Сворити масив не цензцрних слів.
 //     Сворити інпут текстового типу.
 //     Потрібно перевіряти чи не містить ціле речення в собі погані слова.
