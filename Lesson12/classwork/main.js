@@ -11,19 +11,30 @@
                 let div = document.createElement('div')
                 let button = document.createElement('button')
                 div.classList.add('comment')
-                div.innerText = `${post.id} ${post.title} ${post.body}`
+                div.innerHTML = `
+                <h2>${post.id}</h2> 
+                 <h3>${post.title}</h3> 
+                 <p><b>Body</b>${post.body}</p>`
                 button.innerText = "CLick"
                 button.classList.add('button')
 
 
                 button.addEventListener('click', () => {
-                    fetch(`https://jsonplaceholder.typicode.com/posts/${posts.id}/comments`)
+                    fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
                         .then(response => response.json())
                         .then(comments => {
                             for (const comment of comments) {
                                 if (post.id === comment.postId) {
                                     let divComments = document.createElement('div')
-                                    divComments.innerText = `${comment.id} ${comment.name} ${comment.email} ${comment.body}`
+                                    divComments.innerHTML =
+                                        `
+                                        <h2> ID: ${comment.id}</h2>
+                                        <h3>${comment.name}</h3>
+                                         <p><b>Email</b>${comment.email}</p>
+                                         <p><b>Body</b>${comment.body}</p>
+                                         `;
+
+
                                     div.appendChild(divComments)
 
                                 }
@@ -35,5 +46,8 @@
                 document.body.appendChild(wrap)
             }
         });
+
+
+
 
 
