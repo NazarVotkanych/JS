@@ -67,7 +67,7 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
                                         .then(response => response.json())
                                         .then(comments => {
                                             for (const comment of comments) {
-                                                if (post.id === comment.userId) {
+                                                // if (post.id === comment.userId) {
                                                     let divComments = document.createElement('div')
                                                     divComments.innerHTML = `
                                                 <h2> ID: ${comment.id}</h2>
@@ -77,7 +77,7 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
                                                     `
                                                     divPosts.appendChild(divComments)
                                                 }
-                                            }
+                                            // }
                                         });
                                 });
                                 div.appendChild(divPosts)
